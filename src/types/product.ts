@@ -1,0 +1,18 @@
+import { ICategory } from "./category";
+
+export interface Product {
+    id: number;
+    nombre: string;
+    precio: number;
+    descripcion: string;
+    stock: number;
+    imagen: string;
+    disponible: boolean;
+    eliminado: boolean;
+    createdAt: string;
+    categorias: ICategory[]; // Un producto puede tener varias categorías
+}
+
+export interface CartItem extends Product {
+    cantidad: number;
+}

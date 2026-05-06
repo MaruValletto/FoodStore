@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito - Food Store</title>
+    <link rel="icon" type="image/png" href="/img/logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="/img/logo1.png" alt="Food Store Logo" class="main-logo">
+                <span class="brand-name">Food<span class="accent">Store</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="../home/home.html" class="nav-link">Catálogo</a>
+                <a href="#" class="nav-link active">Carrito <span id="cart-nav-count" class="cart-badge">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-layout-container">
+        <h2>Mi Carrito</h2>
+
+        <div id="empty-cart-msg" class="empty-cart" style="display: none;">
+            <p>Tu carrito está vacío. ¡Agregá algo rico! 🍕</p>
+            <a href="../home/home.html" class="btn-add">Volver al catálogo</a>
+        </div>
+
+        <section id="cart-content" class="cart-columns">
+            <div class="cart-items-column" id="cart-items">
+                </div>
+
+            <div class="cart-summary-column">
+                <div class="cart-summary-card">
+                    <h3>Resumen del pedido</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">$0</span>
+                    </div>
+                    <div class="summary-row delivery">
+                        <span>Envío</span>
+                        <span>Gratis</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="summary-total">
+                        <span>Total a pagar</span>
+                        <span id="cart-total-amount">$0</span>
+                    </div>
+                    <button id="btn-checkout" class="btn-checkout">Finalizar Compra</button>
+                    <button id="btn-clear-cart" class="btn-clear-cart">Vaciar Carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Food Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="./cart.ts"></script>
+</body>
+</html>

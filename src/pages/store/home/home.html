@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Catálogo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="icon" type="image/png" href="/img/logo1.png">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="/img/logo1.png" alt="Food Store Logo" class="main-logo">
+                <span class="brand-name">Food<span class="accent">Store</span></span>
+            </div>
+            
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+            </div>
+
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Catálogo</a>
+                <a href="../cart/cart.html" class="nav-link">Carrito</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h2>Categorías</h2>
+            <div id="category-list" class="category-cards-container">
+                </div>
+        </aside>
+
+        <main class="content-area">
+            <section id="product-grid" class="product-grid">
+                </section>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Food Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="./home.ts"></script>
+</body>
+</html>
